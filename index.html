@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tricktionary</title>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JS, jQuery" />
+    <meta name="author" content="Joel Monteiro" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tricktionary: a searchable dictionary of tricking moves, organised by level, with a progression map.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand-text">Tricktionary</span>
+            <span class="navbar-count" id="trickCount"></span>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="jumbotron jumbotron-fluid shadow-lg header search-bar">
+        <div class="container">
+            <div class="search-wrap">
+                <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                <input type="search" class="form-control input" id="searchInput"
+                       placeholder="Search a trick… e.g. Triple Corkscrew" aria-label="Search tricks" autocomplete="off">
+                <span class="search-results" id="searchResults" aria-live="polite"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Levels (generated from data/tricks.json by js/app.js) -->
+    <main class="container-fluid tabview">
+        <div id="levels"></div>
+        <p class="no-results text-muted" id="noResults" hidden>No tricks match your search.</p>
+        <div class="alert alert-warning load-error" id="loadError" hidden>
+            Could not load <code>data/tricks.json</code>.
+            If you opened <code>index.html</code> directly from disk, run a local server instead
+            (e.g. <code>python -m http.server</code>) and open <code>http://localhost:8000</code>.
+        </div>
+    </main>
+
+    <!-- Trick detail (slide-out modal) -->
+    <div class="modal fade" id="trickModal" tabindex="-1" role="dialog" aria-labelledby="trickTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="fas fa-times"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span class="level-badge" id="trickLevel"></span>
+                    <h1 class="modal-title text-center" id="trickTitle"></h1>
+                    <video id="trickVideo" class="trick-video" autoplay loop muted playsinline poster="media/videos/placeholder.jpg"></video>
+                    <p class="description text-muted" id="trickDescription"></p>
+
+                    <section class="detail-section" id="prereqSection">
+                        <h4 class="text-muted">PREREQUISITES</h4>
+                        <p class="text-muted section-hint" id="prereqHint"></p>
+                        <div class="chip-list" id="prereqList"></div>
+                    </section>
+
+                    <section class="detail-section" id="unlockSection">
+                        <h4 class="text-muted">UNLOCKS</h4>
+                        <p class="text-muted section-hint">Tricks that build on this one:</p>
+                        <div class="chip-list" id="unlockList"></div>
+                    </section>
+
+                    <section class="detail-section" id="mapSection">
+                        <h4 class="text-muted">PROGRESSION MAP</h4>
+                        <p class="text-muted section-hint">The full path from the foundations to this trick:</p>
+                        <ol class="progression-map" id="progressionMap"></ol>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts (jQuery once: Bootstrap 4 needs it for the modal) -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

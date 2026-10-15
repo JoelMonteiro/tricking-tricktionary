@@ -1,0 +1,409 @@
+/* Tricktionary - mesmo visual da versão original (custom.css), limpo e com as novas secções */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --navy: #2A4C6D;
+    --olive: #676D30;
+    --accent: #5F5BED;      /* acordeões */
+    --link-blue: #5a8aba;
+    --border-blue: #B4C8F1;
+    --green: #5aba68;       /* hover dos botões */
+    --text: #222;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--text);
+    background: #fff;
+}
+
+/* ---------------------------------------------------------------- header + pesquisa */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.navbar-brand-text,
+.navbar-count {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.navbar-count {
+    font-size: 16px;
+    opacity: .7;
+}
+
+.search-bar {
+    height: 80px;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--navy);
+    border-bottom: 2px solid var(--olive);
+}
+
+.search-wrap {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--link-blue);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.input {
+    height: 50px;
+    padding: 0 130px 0 52px !important;
+    font-size: 22px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+.search-results {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.tabview {
+    padding-top: 150px;
+    padding-bottom: 60px;
+    max-width: 1400px;
+}
+
+/* ---------------------------------------------------------------- níveis (acordeão) */
+.accordion {
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    background-color: var(--accent);
+    padding: 10px 14px;
+    margin: 20px 0 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.accordion .level-count {
+    margin-left: 12px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+.accordion:after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f424';   /* expand */
+    color: white;
+    font-weight: 900;
+    margin-left: auto;
+    transition: 0.3s ease;
+}
+
+.accordion:hover:after {
+    transform: scale(1.4);
+}
+
+.accordion.active:after {
+    content: '\f422';   /* compress */
+}
+
+.accordion:focus-visible {
+    box-shadow: 0 0 0 3px var(--border-blue);
+}
+
+.panel {
+    padding: 14px 18px 10px;
+    background-color: white;
+}
+
+.panel[hidden] {
+    display: none;
+}
+
+.level-description {
+    margin: 0 0 1em;
+}
+
+/* ---------------------------------------------------------------- botões dos tricks */
+.trick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 24px;
+}
+
+@media (max-width: 991px) {
+    .trick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 575px) {
+    .trick-grid { grid-template-columns: 1fr; }
+    .input { padding-right: 16px !important; }
+    .search-results { display: none; }
+    .navbar-brand-text { font-size: 22px; }
+    .description { text-align: left; }
+}
+
+.trick-btn {
+    width: 100%;
+    min-height: 55px;
+    padding: 6px 16px;
+    font-size: 16px;
+    background-color: #FFF;
+    border: 1px solid var(--border-blue);
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.trick-btn:hover,
+.trick-btn:focus-visible {
+    transform: scale(1.06);
+    color: #FFF;
+    border-color: var(--green);
+    background-color: var(--green);
+    font-weight: 700;
+    outline: none;
+}
+
+.trick-btn[hidden] {
+    display: none;
+}
+
+.trick-btn mark {
+    padding: 0;
+    background: #fff3a8;
+    color: inherit;
+}
+
+.trick-btn:hover mark {
+    background: transparent;
+}
+
+.no-results {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.load-error {
+    margin-top: 30px;
+}
+
+/* ---------------------------------------------------------------- modal deslizante */
+.modal-dialog-slideout {
+    min-height: 100%;
+    margin: 0 0 0 auto;
+    background: #fff;
+    max-width: 520px;
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+    transform: translate(100%, 0) scale(1);
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+    transform: translate(0, 0);
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal-dialog-slideout .modal-content {
+    border: 0;
+    border-radius: 0;
+}
+
+.modal-dialog-slideout .modal-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.level-badge {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 2px 12px;
+    border-radius: 20px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.modal-title {
+    margin: 16px auto 20px;
+    font-size: 30px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.trick-video {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid var(--link-blue);
+    background: var(--navy);
+    aspect-ratio: 16 / 9;
+}
+
+.description {
+    line-height: 26px;
+    text-align: justify;
+    margin: 25px 10px;
+    font-size: 16px;
+}
+
+.detail-section {
+    text-align: center;
+    margin: 28px 0;
+}
+
+.detail-section h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.section-hint {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.chip {
+    border: 1px solid var(--border-blue);
+    background: #fff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+.chip:hover,
+.chip:focus-visible {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+    outline: none;
+}
+
+.chip small {
+    opacity: .6;
+    margin-left: 4px;
+}
+
+.empty-hint {
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
+}
+
+/* ---------------------------------------------------------------- mapa de progressão */
+.progression-map {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: step;
+}
+
+.progression-map li {
+    counter-increment: step;
+    position: relative;
+    padding: 0 0 18px 44px;
+    text-align: left;
+}
+
+.progression-map li:before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.progression-map li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 34px;
+    bottom: 2px;
+    width: 2px;
+    background: var(--border-blue);
+}
+
+.progression-map .chip-list {
+    justify-content: flex-start;
+}
+
+.progression-map li.current:before {
+    background: var(--green);
+}
+
+.chip.current {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+    font-weight: 700;
+    cursor: default;
+}

@@ -1,0 +1,366 @@
+{
+  "_info": "Dados do Tricktionary.",
+  "levels": [
+    {
+      "id": "beginner",
+      "name": "Beginner",
+      "description": "Start your tricking journey with the fundamentals and first variations."
+    },
+    {
+      "id": "intermediate",
+      "name": "Intermediate",
+      "description": "Expand your arsenal with new twists, swingthroughs and creative combinations."
+    },
+    {
+      "id": "advanced",
+      "name": "Advanced",
+      "description": "Refine your technique and push the boundaries of what's possible."
+    },
+    {
+      "id": "transitions",
+      "name": "Transitions",
+      "description": "Master the connections that bring your combos to life."
+    }
+  ],
+  "tricks": [
+    {
+      "id": "tornado-kick",
+      "name": "Tornado Kick",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "540",
+      "name": "540",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "tornado-kick"
+      ]
+    },
+    {
+      "id": "cheat-720",
+      "name": "Cheat 720",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "540"
+      ]
+    },
+    {
+      "id": "aerial",
+      "name": "Aerial",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "cartwheel"
+      ]
+    },
+    {
+      "id": "front-flip",
+      "name": "Front Flip",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "back-flip",
+      "name": "Back Flip",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "butterfly-kick",
+      "name": "Butterfly Kick",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "tornado-kick"
+      ]
+    },
+    {
+      "id": "butterfly-twist",
+      "name": "Butterfly Twist",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "butterfly-kick"
+      ]
+    },
+    {
+      "id": "illusion-twist",
+      "name": "Illusion Twist",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "slant-gainer",
+      "name": "Slant Gainer",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "moon-kick",
+      "name": "Moon Kick",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "gainer",
+      "name": "Gainer",
+      "level": "beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "back-flip",
+        "slant-gainer"
+      ]
+    },
+    {
+      "id": "cheat-900",
+      "name": "Cheat 900",
+      "level": "intermediate",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "cheat-720"
+      ]
+    },
+    {
+      "id": "full",
+      "name": "Full",
+      "level": "intermediate",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "back-flip"
+      ]
+    },
+    {
+      "id": "gainer-switch",
+      "name": "Gainer Switch",
+      "level": "intermediate",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "gainer"
+      ]
+    },
+    {
+      "id": "corkscrew",
+      "name": "Corkscrew",
+      "level": "intermediate",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "gainer"
+      ]
+    },
+    {
+      "id": "boxcutter",
+      "name": "Boxcutter",
+      "level": "intermediate",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "corkscrew"
+      ]
+    },
+    {
+      "id": "cheat-1080",
+      "name": "Cheat 1080",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "cheat-900"
+      ]
+    },
+    {
+      "id": "cheat-1260",
+      "name": "Cheat 1260",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "cheat-1080"
+      ]
+    },
+    {
+      "id": "double-back-flip",
+      "name": "Double Back Flip",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "back-flip"
+      ]
+    },
+    {
+      "id": "triple-back-flip",
+      "name": "Triple Back Flip",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "double-back-flip"
+      ]
+    },
+    {
+      "id": "double-full",
+      "name": "Double Full",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "full"
+      ]
+    },
+    {
+      "id": "full-in-back-out",
+      "name": "Full-In Back-Out",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "double-back-flip",
+        "double-full"
+      ]
+    },
+    {
+      "id": "double-butterfly-twist",
+      "name": "Double Butterfly Twist",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "butterfly-twist"
+      ]
+    },
+    {
+      "id": "triple-butterfly-twist",
+      "name": "Triple Butterfly Twist",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "double-butterfly-twist"
+      ]
+    },
+    {
+      "id": "double-corkscrew",
+      "name": "Double Corkscrew",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "corkscrew"
+      ]
+    },
+    {
+      "id": "triple-corkscrew",
+      "name": "Triple Corkscrew",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "double-corkscrew"
+      ]
+    },
+    {
+      "id": "dragonfly-corkscrew",
+      "name": "Dragonfly Corkscrew",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "corkscrew"
+      ]
+    },
+    {
+      "id": "double-gainer",
+      "name": "Double Gainer",
+      "level": "advanced",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "gainer",
+        "double-back-flip"
+      ]
+    },
+    {
+      "id": "cartwheel",
+      "name": "Cartwheel",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "back-sweep",
+      "name": "Back Sweep",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "front-sweep",
+      "name": "Front Sweep",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "hook-kick",
+      "name": "Hook Kick",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "j-step",
+      "name": "J-Step",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "scoot",
+      "name": "Scoot",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": []
+    },
+    {
+      "id": "master-scoot",
+      "name": "Master Scoot",
+      "level": "transitions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "video": "media/videos/placeholder.mp4",
+      "prerequisites": [
+        "scoot"
+      ]
+    }
+  ]
+}
